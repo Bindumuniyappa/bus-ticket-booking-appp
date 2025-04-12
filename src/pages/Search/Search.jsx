@@ -6,7 +6,7 @@ const Search = () => {
       <div className="bg-black p-6 rounded-lg shadow-md w-96">
         <div className="grid grid-cols-2 gap-4">
           <label className="block">
-            <span className="text-gray-700 font-medium">From:</span>
+            <span className="text-gray-200 font-medium">From:</span>
             <select className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
               <option value="location1">Bangalore</option>
               <option value="location2">Mysore</option>
@@ -14,7 +14,7 @@ const Search = () => {
             </select>
           </label>
           <label className="block">
-            <span className="text-gray-700 font-medium">To:</span>
+            <span className="text-gray-200 font-medium">To:</span>
             <select className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
               <option value="location1">Mangalore</option>
               <option value="location2">Udupi</option>
@@ -22,14 +22,14 @@ const Search = () => {
             </select>
           </label>
           <label className="block">
-            <span className="text-gray-700 font-medium">Date:</span>
+            <span className="text-gray-200 font-medium">Date:</span>
             <input
               type="date"
               className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             />
           </label>
           <label className="block">
-            <span className="text-gray-700 font-medium">Number of Seats:</span>
+            <span className="text-gray-200 font-medium">Number of Seats:</span>
             <input
               type="number"
               min="1"

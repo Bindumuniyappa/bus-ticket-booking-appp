@@ -1,9 +1,13 @@
 import React from "react";
+import bg from "../../assets/bg1.jpg";
 
 const About = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-3xl">
+    <div
+      className="min-h-screen flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <div className="bg-white bg-opacity-90 shadow-lg rounded-lg p-8 max-w-3xl">
         <h1 className="text-3xl font-bold text-gray-800 mb-4">About Us</h1>
         <p className="text-gray-600 leading-relaxed mb-4">
           Welcome to our travel company! We are dedicated to providing you with

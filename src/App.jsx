@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import HomeContainer from "./pages/HomeContainer/HomeContainer";
 import About from "./pages/About/About";
 import Bus from "./pages/Bus/Bus";
+import Service from "./pages/Service/Service";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<HomeContainer />} />
             <Route path="/about" element={<About />} />
             <Route path="/bus" element={<Bus />} />
+            <Route path="/services" element={<Service />} />
           </Routes>
           {/* Footer */}
           <Footer />
