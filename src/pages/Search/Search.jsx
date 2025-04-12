@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Search = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col items-center justify-center min-h-96 bg-blue-100">
       <div className="bg-black p-6 rounded-lg shadow-md w-96">
@@ -38,7 +40,7 @@ const Search = () => {
           </label>
         </div>
         <div className="flex justify-center mt-4">
-          <button className="bg-blue-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button className="bg-blue-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" onClick={() => navigate("/bus")}>
             Check Availability
           </button>
         </div>
