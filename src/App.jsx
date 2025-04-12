@@ -15,6 +15,7 @@ import Bus6Booking from "./pages/Bus/Bus6Booking";
 import Bus7Booking from "./pages/Bus/Bus7Booking";
 import Bus8Booking from "./pages/Bus/Bus8Booking";  
 import Search from "./pages/Search/Search";
+import Service from "./pages/Service/Service";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
             <Route path="/" element={<HomeContainer />} />
             <Route path="/about" element={<About />} />
             <Route path="/bus" element={<Bus />} />
-            <Route path="/book" element={<Search/>} />
+            <Route path="/book" element={<Search />} />
+            <Route path="/services" element={<Service />} />
             <Route path="/busBooking" element={<BusBooking />} />
             <Route path="/busBooking1" element={<Bus1Booking />} />
             <Route path="/busBooking2" element={<Bus2Booking />} />
