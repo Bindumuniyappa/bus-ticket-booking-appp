@@ -13,7 +13,7 @@ import Bus4Booking from "./pages/Bus/Bus4Booking";
 import Bus5Booking from "./pages/Bus/Bus5Booking";
 import Bus6Booking from "./pages/Bus/Bus6Booking";
 import Bus7Booking from "./pages/Bus/Bus7Booking";
-import Bus8Booking from "./pages/Bus/Bus8Booking";  
+import Bus8Booking from "./pages/Bus/Bus8Booking";
 import Search from "./pages/Search/Search";
 import Service from "./pages/Service/Service";
 
@@ -22,15 +22,12 @@ function App() {
     <>
       <Router>
         <div className="w-full min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-300 flex flex-col overflow-hidden">
-          {/* Navbar */}
           <Navbar />
-
-          {/* Home Content */}
           <Routes>
             <Route path="/" element={<HomeContainer />} />
             <Route path="/about" element={<About />} />
             <Route path="/bus" element={<Bus />} />
-            <Route path="/book" element={<Search />} />
+            <Route path="/search" element={<Search />} />
             <Route path="/services" element={<Service />} />
             <Route path="/busBooking" element={<BusBooking />} />
             <Route path="/busBooking1" element={<Bus1Booking />} />
@@ -42,7 +39,6 @@ function App() {
             <Route path="/busBooking7" element={<Bus7Booking />} />
             <Route path="/busBooking8" element={<Bus8Booking />} />
           </Routes>
-          {/* Footer */}
           <Footer />
         </div>
       </Router>

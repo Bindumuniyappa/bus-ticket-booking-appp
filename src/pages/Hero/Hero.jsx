@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
         <button
           className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-all duration-300"
-          onClick={() => navigate("/book")}
+          onClick={() => navigate("/search")}
         >
           Reserve Seat Now
         </button>
