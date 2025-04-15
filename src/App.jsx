@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import HomeContainer from "./pages/HomeContainer/HomeContainer";
@@ -16,11 +21,15 @@ import Bus7Booking from "./pages/Bus/Bus7Booking";
 import Bus8Booking from "./pages/Bus/Bus8Booking";
 import Search from "./pages/Search/Search";
 import Service from "./pages/Service/Service";
+import { createBrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Router>
+      <Navbar />
+      <Outlet />
+      <Footer />
+      {/* <Router>
         <div className="w-full min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-300 flex flex-col overflow-hidden">
           <Navbar />
           <Routes>
@@ -41,7 +50,7 @@ function App() {
           </Routes>
           <Footer />
         </div>
-      </Router>
+      </Router> */}
     </>
   );
 }

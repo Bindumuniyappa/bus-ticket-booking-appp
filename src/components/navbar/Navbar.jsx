@@ -25,12 +25,10 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-[8ch] bg-neutral-100 dark:bg-neutral-900 flex items-center md:flex-row lg:px-28 md:px-16 sm:px-7 px-4 fixed top-0 z-50">
-      {/* Logo section */}
       <Link to={"/"} className="mr-16">
         <img src={Logo} alt="logo" className="w-28 h-auto object-contain" />
       </Link>
 
-      {/* Toggle button */}
       <button
         onClick={handleClick}
         className="flex-1 lg:hidden text-neutral-600 dark:text-neutral-300 ease-in-out duration-300 flex items-center justify-end"
@@ -42,7 +40,6 @@ const Navbar = () => {
         )}
       </button>
 
-      {/* Navigation links */}
       <div
         className={`${
           open
@@ -76,7 +73,6 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          {/* Theme */}
           <Theme />
         </div>
       </div>
