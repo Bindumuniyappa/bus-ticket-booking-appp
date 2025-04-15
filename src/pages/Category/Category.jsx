@@ -12,7 +12,7 @@ const Category = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center dark:bg-gray-500">
       <h1 className="text-3xl font-bold mb-8 text-center">Select a Bus</h1>
       <div className="flex justify-center gap-10">
         <div
@@ -24,7 +24,7 @@ const Category = () => {
             alt="Private Bus"
             className="w-full rounded-lg shadow-lg"
           />
-          <p className="mt-4 font-semibold text-lg text-gray-700">
+          <p className="mt-4 font-semibold text-lg text-gray-700 dark:text-neutral-300">
             Private Bus
           </p>
         </div>
@@ -37,7 +37,7 @@ const Category = () => {
             alt="Government Bus"
             className="w-full rounded-lg shadow-lg"
           />
-          <p className="mt-4 font-semibold text-lg text-gray-700">
+          <p className="mt-4 font-semibold text-lg text-gray-700 dark:text-neutral-300">
             Government Bus
           </p>
         </div>
@@ -50,7 +50,7 @@ const Category = () => {
             alt="Tourist Bus"
             className="w-full rounded-lg shadow-lg"
           />
-          <p className="mt-4 font-semibold text-lg text-gray-700">
+          <p className="mt-4 font-semibold text-lg text-gray-700 dark:text-neutral-300">
             Tourist Bus
           </p>
         </div>

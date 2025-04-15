@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-[8ch] bg-neutral-100 dark:bg-neutral-900 flex items-center md:flex-row lg:px-28 md:px-16 sm:px-7 px-4 fixed top-0 z-50">
+    <div className="w-full h-[8ch] bg-neutral-100 dark:bg-gray-300 flex items-center md:flex-row lg:px-28 md:px-16 sm:px-7 px-4 fixed top-0 z-50">
       <Link to={"/"} className="mr-16">
         <img src={Logo} alt="logo" className="w-28 h-auto object-contain" />
       </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
               <Link
                 to={link.href}
                 onClick={handleClose}
-                className="hover:text-violet-600 ease-in-out duration-300"
+                className="hover:text-violet-600 dark:text-white ease-in-out duration-300"
               >
                 {link.label}
               </Link>
