@@ -7,10 +7,17 @@ import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import { busData } from "../../api/Busdata";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const BookingCards = () => {
   const navigate = useNavigate();
+  const { search } = useLocation();
+  const query = new URLSearchParams(search);
+
+  const from = query.get("from");
+  const to = query.get("to");
+  const date = query.get("date");
+
   return (
     <div
       style={{
@@ -34,9 +41,14 @@ const BookingCards = () => {
               <Typography gutterBottom variant="h6" component="div">
                 {bus.busName}
               </Typography>
+
               <Typography variant="body2" color="text.secondary">
-                Date: {bus.date}
+                Route: {from} ➡️ {to}
               </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Date: {date}
+              </Typography>
+
               <Typography variant="body2" color="text.secondary">
                 Timings: {bus.timings.join(" | ")}
               </Typography>
