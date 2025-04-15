@@ -9,6 +9,7 @@ import About from "./pages/About/About.jsx";
 import Bus from "./pages/Bus/Bus.jsx";
 import Search from "./pages/Search/Search.jsx";
 import Service from "./pages/Service/Service.jsx";
+import BusBooking from "./pages/Bus/BusBooking.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: "/services",
         element: <Service />,
       },
+      {
+        path:"/booking/:id",
+        element: <BusBooking />,
+      }
     ],
   },
 ]);
@@ -43,6 +48,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
-    {/* <App /> */}
   </StrictMode>
 );
